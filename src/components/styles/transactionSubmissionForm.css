@@ -1,0 +1,53 @@
+.submission-form{
+    margin: 25px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-content: center;
+}
+.submission-input{
+    padding: 8px 10px;
+    margin: 3px;
+    /* background-color: #646d81; */
+    background: linear-gradient(90deg,#646d81, #50596b, #646d81);
+    background: linear-gradient(#646d81, #959aa3, #646d81);
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px black;
+}
+
+.submission-input:hover{
+    cursor: text;
+}
+
+.submission-input:focus{
+    outline: none;
+}
+
+.submission-button{
+    padding: 13px 20px;
+    /* background-color: #646d81; */
+    background: linear-gradient(90deg,#646d81, #50596b, #646d81);
+    background: linear-gradient(#646d81, #acb0b8, #646d81);
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.submission-button:hover{
+    background: none;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }  

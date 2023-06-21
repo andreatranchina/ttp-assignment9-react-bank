@@ -1,0 +1,29 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 1rem;
+    position: relative;
+    top: 60px;
+}
+
+.user-profile-link{
+    color: black;
+}
+
+.user-profile-link:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.user-display{
+    display: inline-block;
+    width: 60%;
+    border: 3px solid black;
+    position: relative;
+    bottom: 60px;
+    left: 5px;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 0.5rem;
+    background: linear-gradient(#646d81, #838c9d, #646d81);
+}

@@ -1,0 +1,36 @@
+.account-details-display{
+    position: relative;
+    bottom: 30px;
+}
+
+.settings-button{
+    position: relative;
+    right: 20px;
+    padding: 5px 20px;
+    border-radius: 0.5rem;
+    background: linear-gradient(#646d81, #838c9d, #646d81);
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.settings-button:hover{
+    background:none;
+    box-shadow: none;
+}
+
+.back-to-profile-link{
+    position: relative;
+    left: 20px;
+    padding: 8px 18px;
+    border-radius: 0.5rem;
+    background: linear-gradient(#646d81, #838c9d, #646d81);
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.back-to-profile-link:hover{
+    background:none;
+    box-shadow: none;
+}

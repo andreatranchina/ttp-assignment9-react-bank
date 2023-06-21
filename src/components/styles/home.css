@@ -1,0 +1,22 @@
+.summary{
+    margin: 40px auto; 
+    border: 3px solid black;
+    width: 60%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 0.5rem;
+    background: linear-gradient(#646d81, #838c9d, #646d81);
+}
+
+span{
+    margin-right: 50px;
+}
+
+.settings-button{
+    margin:10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .summary{
+        width: 95%;
+    }
+  }
