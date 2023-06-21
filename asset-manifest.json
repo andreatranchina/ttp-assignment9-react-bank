@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ttp-assignment9-react-bank/static/css/main.7f8680c3.css",
-    "main.js": "/ttp-assignment9-react-bank/static/js/main.70a210e3.js",
+    "main.css": "/ttp-assignment9-react-bank/static/css/main.4695c823.css",
+    "main.js": "/ttp-assignment9-react-bank/static/js/main.5df4dc71.js",
     "static/js/496.d4da1822.chunk.js": "/ttp-assignment9-react-bank/static/js/496.d4da1822.chunk.js",
     "index.html": "/ttp-assignment9-react-bank/index.html",
-    "main.7f8680c3.css.map": "/ttp-assignment9-react-bank/static/css/main.7f8680c3.css.map",
-    "main.70a210e3.js.map": "/ttp-assignment9-react-bank/static/js/main.70a210e3.js.map",
+    "main.4695c823.css.map": "/ttp-assignment9-react-bank/static/css/main.4695c823.css.map",
+    "main.5df4dc71.js.map": "/ttp-assignment9-react-bank/static/js/main.5df4dc71.js.map",
     "496.d4da1822.chunk.js.map": "/ttp-assignment9-react-bank/static/js/496.d4da1822.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f8680c3.css",
-    "static/js/main.70a210e3.js"
+    "static/css/main.4695c823.css",
+    "static/js/main.5df4dc71.js"
   ]
 }
