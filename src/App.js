@@ -1,6 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from 'react'
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {HashRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 import axios from "axios";
 
@@ -81,8 +81,10 @@ function App() {
             <Link className="link" to="/">Home</Link>
             <Link className="link" to="/debits">Debits</Link>
             <Link className="link" to="/credits">Credits</Link>
-            <Link className="link" to="/userProfile">User Profile</Link>
+            <Link className="link" to="/userProfile">Profile</Link>
         </nav>
+        {/* <h1>Welcome to Your Bank Account</h1>
+        <img alt="bank-image" src="https://www.upflip.com/wp-content/uploads/2021/02/bank-building.jpg"></img> */}
 
         {/* Routes */}
         <Routes>

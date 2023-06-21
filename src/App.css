@@ -54,3 +54,11 @@ td{
   border-radius: 0.5rem;
 }
 
+img{
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px black;
+  width: 60%;
+  height: 70vh;
+}
+

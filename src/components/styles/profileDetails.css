@@ -11,6 +11,7 @@
     background: linear-gradient(#646d81, #838c9d, #646d81);
     border: 3px solid black;
     box-shadow: 2px 2px 2px black;
+    color: black;
 }
 
 .settings-button:hover{
