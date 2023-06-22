@@ -3,32 +3,30 @@ import TransactionHistoryItem from './TransactionHistoryItem';
 import TransactionSubmissionForm from './TransactionSubmissionForm';
 
 function Credits(props) {
-  // const [creditHistory, setCreditHistory] = useState([
-  //   {"description": "User Deposit",
-  //   "amount": "30000.00",
-  //   "date": "04-07-2023"},
-  //   {"description": "User Deposit",
-  //   "amount": "35330.00",
-  //   "date": "06-20-2023"},           
-  // ]);
   const [inputDate, setInputDate] = useState("");
   const [inputDescription, setInputDescription] = useState("");
   const [inputAmount, setInputAmount] = useState("");
 
+  //passed as props to TransactionSubmissionForm Child
   function handleChangeDescription(event){
     setInputDescription(event.target.value);
   }
 
+  //passed as props to TransactionSubmissionForm Child
   function handleChangeAmount(event){
     setInputAmount(event.target.value);
   }
 
+  //passed as props to TransactionSubmissionForm Child
   function handleChangeDate(event){
     setInputDate(event.target.value);
   }
   
+  //passed as props to TransactionSubmissionForm Child, adds new transaction
+  //to Transaction History, and updates Credit
   function handleSubmitNewTransaction(event){
     event.preventDefault();
+    //check if form fields are filled
     if (inputDescription !== "" && inputAmount !== "" && inputDate !== ""){
       let newCredit = {
         "description": inputDescription,
@@ -36,6 +34,7 @@ function Credits(props) {
         "date": inputDate
       }
       props.addCreditTransaction(newCredit);
+      //reset the fields and respective values to be ""
       event.target.children[0].value = "";
       event.target.children[1].value = "";
       event.target.children[2].value = "";
@@ -54,7 +53,7 @@ function Credits(props) {
         <thead>
           <tr>
             <td>Description</td>
-            <td>Price</td>
+            <td>Amount</td>
             <td>Date</td>
           </tr>
         </thead>

@@ -11,6 +11,7 @@ import Debits from "./components/Debits";
 
 
 function App() {
+  //states for balance, credit and debit (along with their respective transaction histories)
   const [credit, setCredit] = useState();
   const [debit, setDebit] = useState();
   const [balance, setBalance] = useState();
@@ -33,6 +34,7 @@ function App() {
     "date": "06-20-2023"},           
   ]);
   
+  //to run only on initial page load, will fetch initial data from API
   useEffect(() =>{
     const getData = async () => {
         try{
@@ -51,6 +53,7 @@ function App() {
     getData();
   }, []);
 
+  //to run whenever the debit or credit is updated, to dynamically recalculate balance
   useEffect(()=>{
     const determineBalance = async () =>{
       try{
@@ -63,11 +66,13 @@ function App() {
     determineBalance();
   }, [debit, credit])
 
+  //add a debit transaction, called by child Debit component (passed as props)
   function addDebitTransaction(newDebit){
     setDebitHistory([...debitHistory, newDebit]);
     setDebit(debit + Number(newDebit.amount));
   }
 
+  //add a credit transaction, called by child Credit component (passed as props)
   function addCreditTransaction(newCredit){
     setCreditHistory([...creditHistory, newCredit]);
     setCredit(credit + Number(newCredit.amount));

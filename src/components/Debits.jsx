@@ -3,32 +3,30 @@ import TransactionHistoryItem from './TransactionHistoryItem';
 import TransactionSubmissionForm from './TransactionSubmissionForm';
 
 function Debits(props) {
-  // const [debitHistory, setDebitHistory] = useState([
-  //   {"description": "Samsung 8K QLED TV",
-  //   "amount": "7500.00",
-  //   "date": "06-01-2023"},
-  //   {"description": "Apple Vision Pro",
-  //   "amount": "5000.00",
-  //   "date": "06-20-2023"},           
-  // ]);
   const [inputDate, setInputDate] = useState("");
   const [inputDescription, setInputDescription] = useState("");
   const [inputAmount, setInputAmount] = useState("");
 
+  //passed as props to TransactionSubmissionForm Child  
   function handleChangeDescription(event){
     setInputDescription(event.target.value);
   }
 
+  //passed as props to TransactionSubmissionForm Child  
   function handleChangeAmount(event){
     setInputAmount(event.target.value);
   }
 
+  //passed as props to TransactionSubmissionForm Child
   function handleChangeDate(event){
     setInputDate(event.target.value);
   }
-  
+ 
+  //passed as props to TransactionSubmissionForm Child, adds new transaction
+  //to Transaction History, and updates Debit  
   function handleSubmitNewTransaction(event){
     event.preventDefault();
+    //ensure that form fields have been filled
     if (inputDescription !== "" && inputAmount !== "" && inputDate !== ""){
       let newDebit = {
         "description": inputDescription,
@@ -36,6 +34,7 @@ function Debits(props) {
         "date": inputDate
       }
       props.addDebitTransaction(newDebit);
+      //reset form fields and respective values to "" after submission
       event.target.children[0].value = "";
       event.target.children[1].value = "";
       event.target.children[2].value = "";
@@ -54,7 +53,7 @@ function Debits(props) {
         <thead>
           <tr>
             <td>Description</td>
-            <td>Price</td>
+            <td>Amount</td>
             <td>Date</td>
           </tr>
         </thead>
